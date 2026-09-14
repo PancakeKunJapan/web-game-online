@@ -12,7 +12,20 @@
         <div id="the-bj-body">
             <p><a href="../../index.html">タイトルへ戻る</a></p>
         </div>
-        <div id="game-status">接続を待機中</div>
+        
+        <div id="screen-start" class="screen">
+            <button id="start-button">ゲームを開始</button>
+        </div>
+
+        <div id="screen-mode-select" class="screen" hidden>
+            <button id="mode-select-return">戻る</button>
+            <button id="single-mode-button">一人で遊ぶ</button>
+            <button id="vs-mode-button">対戦で遊ぶ(開発中)</button>
+        </div>
+
+        <div id="screen-game" class="screen" hidden>
+        </div>
+
         <script type="module" src="blackjack.js"></script>
     </body>
 </html>
