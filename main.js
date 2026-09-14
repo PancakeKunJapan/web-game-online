@@ -1,6 +1,5 @@
-import { initializeApp } from "firebase/app";
-
-import { getAnalytics } from "firebase/analytics";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-analytics.js";
 
 const firebaseConfig = {
 
