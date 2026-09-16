@@ -24,6 +24,18 @@
         </div>
 
         <div id="screen-game" class="screen" hidden>
+            <div id="dealer-area">
+                <h2>ディーラー <span id="dealer-score"></span> <span id="dealer-status"></span></h2>
+                <div id="dealer-cards"></div>
+            </div>
+            <div id="player-area">
+                <h2>あなた <span id="player-score"></span> <span id="player-status"></span></h2>
+                <div id="player-cards"></div>
+                <div id="player-buttons">
+                    <button id="hit-button">ヒット</button> <button id="stand-button">スタンド</button> <button id="restart-button" hidden>もう一度プレイ</button>
+                </div>
+            </div>
+            <span id="win-or-lose"></span>
         </div>
 
         <script type="module" src="blackjack.js"></script>
