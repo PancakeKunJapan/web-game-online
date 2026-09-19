@@ -1,4 +1,4 @@
-import { suitSymbols } from "./deck.js";
+import { suitSymbols } from "../../shared/deck.js";
 import {
     playerHand,
     dealerHand,
@@ -9,13 +9,7 @@ import {
     judgeWinner,
     resetGame,
     setGameOver,
-} from "./game.js";
-
-function showScreen(screenId) {
-    document.querySelectorAll(".screen").forEach((el) => {
-        el.hidden = (el.id !== screenId);
-    });
-}
+} from "../../shared/game.js";
 
 const dealerCardsEl = document.getElementById("dealer-cards");
 const playerCardsEl = document.getElementById("player-cards");
@@ -84,16 +78,6 @@ function startGame() {
         updateScores(false);
     }
 }
-
-document.getElementById("start-button").addEventListener("click", () => {
-    showScreen("screen-mode-select");
-});
-document.getElementById("mode-select-return").addEventListener("click", () => {
-    showScreen("screen-start");
-});
-document.getElementById("single-mode-button").addEventListener("click", () => {
-    showScreen("screen-game");
-});
 
 hitButtonEl.addEventListener("click", () => {
     hit();
